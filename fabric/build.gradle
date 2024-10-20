@@ -41,12 +41,14 @@ loom {
             setConfigName("Fabric Client")
             ideConfigGenerated(true)
             runDir("run/client")
+            property("fabric.log.level", "debug")
         }
         server {
             server()
             setConfigName("Fabric Server")
             ideConfigGenerated(true)
             runDir("run/server")
+            property("fabric.log.level", "debug")
         }
     }
 }
